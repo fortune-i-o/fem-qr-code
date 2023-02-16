@@ -1,0 +1,34 @@
+@use "../util/mixin" as m;
+
+.card {
+  @include m.flex(space-between);
+  background: var(--white);
+  border-radius: 1.5rem;
+  box-shadow: 0 5px 20px 0 var(--card-shadow);
+  height: auto;
+  margin: 0.8rem 0 0;
+  padding: 0.9rem 1rem 1.9rem;
+  text-align: center;
+  width: min(90%, 20em);
+
+  img {
+    border-radius: 0.8rem;
+    width: 100%;
+  }
+}
+
+.attribution {
+  font-size: clamp(0.85rem, 0.937rem + 2vw, 0.9687rem);
+  margin: 0.9rem 0;
+  text-align: center;
+  width: 80%;
+  a {
+    color: #112b91;
+    font-weight: 500;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
